@@ -145,9 +145,9 @@
         </div>
       </nav>
       <div
-        class="pl-5 xl:pl-20 flex w-full justify-between relative mt-52 h-4/5"
+        class="pl-5 xl:pl-20 flex w-full justify-start relative mt-52 h-4/5"
       >
-        <div class="flex flex-col gap-8 pt-7">
+        <div class="flex flex-col gap-8 pt-7 mr-20 2xl:mr-44 mt-40 2xl:mt-24">
           <div
             class="
               h-14
@@ -200,16 +200,16 @@
             <i class="fab fa-pinterest text-2xl"></i>
           </div>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col mt-40 2xl:mt-24 max-w-2xl">
           <div class="flex flex-col items-start">
-            <h1 class="text-7xl">
+            <h1 class="text-5xl 2xl:text-7xl">
               How do you design <br />
               content for every <br />
               language
             </h1>
             <p class="text-base text-gray-700 mt-12 mb-20">
               We're the content, research and design team at Oxford. We help
-              riders move, restaurants grow and <br />
+              riders move, restaurants grow and
               customers eat in over 200 cities around the world. Come find the
               answers with us.
             </p>
@@ -232,23 +232,14 @@
           </div>
           <!-- <div>bottom</div> -->
         </div>
-        <div
-          class="
-            header-bottom
-            self-end
-            w-96
-            h-96
-            flex
-            items-center
-            justify-center
-          "
-        >
-          <img
-            class="relative left-14 top-14"
-            src="./images/button-play.png"
-            alt="play icon"
-          />
-        </div>
+      </div>
+      <div class="header-bottom bg-blue-500  self-end flex items-center justify-center">
+        <img
+          class="relative"
+          src="./images/button-play.png"
+          alt="play icon"
+        />
+        <img class="absolute -top-20 -left-20 bottom-img" src="./images/img.png" alt="">
       </div>
     </div>
     <!-- Customers block -->
@@ -258,11 +249,13 @@
           bg-blue-500
           relative
           -top-2
+          customers-left
           flex flex-col
           items-center
           justify-center
+          pb-96
+          pt-60
         "
-        style="width: 1260px"
       >
         <div class="w-80 relative right-40">
           <h1 class="text-5xl text-white leading-snug">
@@ -293,23 +286,25 @@
           </button>
         </div>
       </div>
-      <div class="customers-right"></div>
-      <div class="absolute modal"></div>
-      <div
-        class="
-          absolute
-          plus
-          h-14
-          w-14
-          rounded-full
-          bg-white
-          flex
-          justify-center
-          items-center
-        "
-      >
-        <i class="fas fa-plus"></i>
+      <div class="customers-right">
+        <div
+          class="
+            absolute
+            plus
+            h-14
+            w-14
+            rounded-full
+            bg-white
+            flex
+            justify-center
+            items-center
+          "
+        >
+          <i class="fas fa-plus"></i>
+        </div>
+        <div class="absolute modal w-2/5 h-1/2"></div>
       </div>
+
       <div class="vertical-text">
         <p>
           Delighting customers in over <br />
