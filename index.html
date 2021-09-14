@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MI Bussines</title>
-    <link rel="stylesheet" href="./style/tailwind.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css" />
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -29,7 +32,15 @@
         "
       >
         <div class="logo w-1/5 mr-5">
-          <h1 class="uppercase tracking-widest text-xl text-left font-semibold cursor-pointer">
+          <h1
+            class="
+              uppercase
+              tracking-widest
+              text-xl text-left
+              font-semibold
+              cursor-pointer
+            "
+          >
             MI Bussines
           </h1>
         </div>
@@ -145,7 +156,7 @@
         </div>
       </nav>
       <div class="pl-5 xl:pl-20 flex w-full justify-start relative mt-52 h-4/5">
-        <div class="flex flex-col gap-8 pt-7 mr-20 2xl:mr-44 mt-40 2xl:mt-24">
+        <div class="flex flex-col gap-8 pt-7 mr-20 2xl:mr-44 mt-40 2xl:mt-24" data-aos="fade-right">
           <div
             class="
               h-14
@@ -199,7 +210,7 @@
           </div>
         </div>
         <div class="flex flex-col mt-40 2xl:mt-24 max-w-2xl">
-          <div class="flex flex-col items-start">
+          <div data-aos="fade-up" class="flex flex-col items-start">
             <h1 class="text-5xl 2xl:text-7xl">
               How do you design <br />
               content for every <br />
@@ -231,6 +242,7 @@
         </div>
       </div>
       <div
+        data-aos="fade-left"
         class="
           header-bottom
           bg-blue-500
@@ -252,7 +264,6 @@
     <div class="customers w-full flex relative">
       <div
         class="
-        
           relative
           -top-2
           customers-left
@@ -263,7 +274,7 @@
           pt-60
         "
       >
-        <div class="w-80 relative right-40">
+        <div class="w-80 relative right-40" data-aos="fade-right">
           <h1 class="text-5xl text-white leading-snug">
             Delighting customers in over 200 cities in the world.
           </h1>
@@ -293,7 +304,7 @@
         </div>
       </div>
       <div class="customers-right">
-        <div class="modal">
+        <div class="modal" data-aos="fade-left">
           <div
             class="
               absolute
@@ -311,7 +322,7 @@
           </div>
         </div>
         <div class="vertical-text">
-          <p>
+          <p data-aos="fade-up">
             Delighting customers in over <br />
             200 cities in the world.
           </p>
@@ -332,8 +343,8 @@
       "
     >
       <div>
-        <h1 class="text-5xl text-center">Our Expertises</h1>
-        <p class="text-gray-600 mt-12 mb-20 text-center">
+        <h1 class="text-5xl text-center" data-aos="fade-up">Our Expertises</h1>
+        <p class="text-gray-600 mt-12 mb-20 text-center" data-aos="fade-up">
           We're the content, research and design team at Oxford. We help riders
           move, <br />
           restaurants grow and customers eat in over 200 cities around the
@@ -343,7 +354,10 @@
       <div
         class="experties-box bg-white flex flex-row justify-center items-center"
       >
-        <div class="flex flex-col justify-center items-center pr-14 pl-14">
+        <div
+          class="flex flex-col justify-center items-center pr-14 pl-14"
+          data-aos="fade-right"
+        >
           <img src="./images/growth-imac.png" alt="" />
           <h1 class="mt-20 text-2xl mb-5">Research</h1>
           <p class="mb-28 text-center">
@@ -369,7 +383,10 @@
             find out more
           </button>
         </div>
-        <div class="flex flex-col justify-center items-center pr-14 pl-14">
+        <div
+          class="flex flex-col justify-center items-center pr-14 pl-14"
+          data-aos="fade-up"
+        >
           <img src="./images/television-box.png" alt="" />
           <h1 class="mt-20 text-2xl mb-5">Content</h1>
           <p class="mb-28 text-center">
@@ -395,7 +412,10 @@
             find out more
           </button>
         </div>
-        <div class="flex flex-col justify-center items-center pr-14 pl-14">
+        <div
+          class="flex flex-col justify-center items-center pr-14 pl-14"
+          data-aos="fade-left"
+        >
           <img src="./images/cell-nucleus.png" alt="" />
           <h1 class="mt-20 text-2xl mb-5">Product Design</h1>
           <p class="mb-28 text-center">
@@ -425,17 +445,18 @@
     </div>
     <!-- Deisgn content block -->
     <div class="design-content flex flex-col justify-center items-center">
-      <h1 class="text-white text-center text-7xl">
+      <h1 class="text-white text-center text-7xl" data-aos="fade-up">
         How do you design content for <br />
         every language
       </h1>
-      <p class="text-white text-center mt-10 mb-14">
+      <p class="text-white text-center mt-10 mb-14" data-aos="fade-up">
         We're the content, research and design team at Oxford. We help riders
         move, restaurants grow and <br />
         customers eat in over 200 cities around the world. Come find the answers
         with us.
       </p>
       <button
+        data-aos="fade-up"
         class="
           uppercase
           py-4
@@ -597,5 +618,11 @@
         </p>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
